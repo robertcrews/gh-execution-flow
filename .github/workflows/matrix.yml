@@ -11,7 +11,7 @@ jobs:
           - node-version: 18
             operating-system: ubuntu-latest
         exclude:
-          - node-version: 20
+          - node-versions: 20
           - operating-system: windows-latest
     runs-on: ${{ matrix.operating-system }}
     steps:
