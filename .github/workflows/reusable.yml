@@ -4,5 +4,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Get code
+        uses: actions/download-artifact@v7
+          with: 
       - name: Output information
         run: echo "Deploying & Updating..."
